@@ -1,1 +1,42 @@
+Q1. Explain the primary differences between TensorFlow and PyTorch. When would you choose one over the other?
+TensorFlow and PyTorch are both deep learning frameworks, but they differ in the following ways:
+
+| Feature               | TensorFlow                                              | PyTorch                                    |
+| --------------------- | ------------------------------------------------------- | ------------------------------------------ |
+| **Computation Graph** | Static (defined then executed)                          | Dynamic (defined and executed on-the-fly)  |
+| **Ease of Debugging** | Harder (uses static graphs)                             | Easier (Pythonic and debuggable)           |
+| **Deployment**        | More mature for production (TensorFlow Serving, TFLite) | Less mature but improving (TorchScript)    |
+| **Syntax**            | More verbose, graph-oriented                            | More intuitive, Python-native              |
+| **Visualization**     | TensorBoard                                             | Uses third-party tools or basic matplotlib |
+
+When to choose:
+
+___Use PyTorch for research and quick prototyping due to flexibility.
+
+____Use TensorFlow for production and scalability, especially in mobile and cloud environments.
+
+ Q2: Describe two use cases for Jupyter Notebooks in AI development.
+a. Exploratory Data Analysis (EDA):
+Jupyter allows developers to interactively explore, visualize, and clean datasets using tools like pandas, seaborn, and matplotlib.
+
+b. Model Prototyping and Experimentation:
+AI developers can quickly test different machine learning models, tune hyperparameters, and visualize results within the same notebook.
+
+Q3: How does spaCy enhance NLP tasks compared to basic Python string operations?
+spaCy is a powerful NLP library that provides:
+>Pretrained Models for tokenization, POS tagging, named entity recognition (NER), and more.
+>Efficiency and Speed: Optimized in Cython, it is faster than using raw Python.
+>Linguistic Features: Understands the grammar and context, unlike basic str.split() or regex.
+>Pipeline Design: Easily integrates tokenization, tagging, parsing, and NER in a structured workflow.
+Compared to basic string operations, spaCy provides context-aware, structured, and scalable NLP solutions.
+
+| Feature                 | Scikit-learn                                      | TensorFlow                                          |
+| ----------------------- | ------------------------------------------------- | --------------------------------------------------- |
+| **Target Applications** | Classical ML (SVM, decision trees, regression)    | Deep learning (CNNs, RNNs, transformers)            |
+| **Ease of Use**         | Very beginner-friendly, simple API                | Steeper learning curve, especially for model design |
+| **Community Support**   | Strong community, well-documented, academic usage | Large community, industry-backed by Google          |
+
+
+
+
 
